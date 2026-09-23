@@ -45,7 +45,7 @@ function draw(){
    const w=photo.width*base*scale,h=photo.height*base*scale;
    ctx.drawImage(photo,(c.width-w)/2+ox,(c.height-h)/2+oy,w,h);
  }
- if(frame.complete) ctx.drawImage(frame,0,0,c.width,c.height);
+ ctx.drawImage(frame,0,0,c.width,c.height);
 }
 frame.onload=draw;
 document.getElementById('file').onchange=e=>{
